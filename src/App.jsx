@@ -7,9 +7,10 @@ function App() {
     const [posts, setPosts] = useState("")
 
     useEffect(() => {
-        fetch("http://localhost:53342/api/get")
+        fetch("/api/get")
             .then((res) => res.json())
             .then((res) => {
+                console.log(res)
                 setPosts(res[1].text)
             })
     }, [])
@@ -19,7 +20,7 @@ function App() {
     function postData(username, bodytext)
     {
 
-        fetch("http://localhost:53342/api/post",{
+        fetch("/api/post",{
             method: "POST",
             headers: {
                 'Accept': 'application/json',
