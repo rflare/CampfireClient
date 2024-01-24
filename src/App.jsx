@@ -1,60 +1,46 @@
 import { useState, useEffect } from 'react'
+import './css/index.css'
 
-function App() {
+export default function App() {
     const [username, setUsername] = useState("")
     const [bodyText, setBodyText] = useState("")
 
-    const [posts, setPosts] = useState([])
+    const [feed, setFeed] = useState([])
 
     useEffect(() => {
         fetch("/api/get")
             .then((res) => res.json())
             .then((res) => {
                 console.log(res)
-                setPosts(res)
+                setFeed(res)
             })
     }, [])
     
-
-
-    function postData(username, bodytext)
-    {
-        fetch("/api/post",{
-            method: "POST",
-            headers: {
-                'Accept': 'application/json',
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                name: username,
-                text: bodytext,
-                time: Date.now()
-            })
-        })
-
-    }
 
     return (
         <>
             
 
-            <div style={{position:"fixed", backgroundColor:"#aaa", width:"100%"}}>
+            <header>
                 <label>Your name:</label><br/>
                 <input type="text" value={username} maxLength="30" onChange={(e) => setUsername(e.target.value)}/><br/>
 
                 <label>What do you want to say?</label><br/>
-                <textarea value={bodyText} onChange={(e) => setBodyText(e.target.value)} rows={4} cols={30}/><br/>
+                <textarea value={bodyText} onChange={(e) => setBodyText(e.target.value)} wrap="off" /><br/>
 
-                <p>Name: {username}</p>
-                <p>Text: {bodyText}</p>
-                <button onClick={()=>postData(username, bodyText)}>Send post</button>
-            </div>
+                <button onClick={()=>uploadPost(username, bodyText)}>Upload post</button>
 
-            <div style={{height:"300px"}}></div>
+            </header>
 
-            <ul>{posts.map((post, index) => 
-                <li key={index}>{post.name} said: {post.text} at {new Date(post.time_millis).toDateString()}</li>
-            )}</ul>
+            <br/>
+
+            {feed.map((post, index) => 
+                <Post key={index} name={post.name} text={post.text} time={post.time_millis} />
+            )}
+
+            <br/>
+
+            <footer></footer>
 
 
 
@@ -62,4 +48,32 @@ function App() {
     )
 }
 
-export default App
+function Post({name, text, time}) {
+    return (
+        <>
+            <div className="postContainer">
+                <span>{new Date(time).toDateString()}</span>
+                <h1>{name}</h1>
+                <p>{text}</p>
+            </div>
+            <br/>
+        </>
+    )
+}
+
+function uploadPost(username, bodytext)
+{
+    fetch("/api/post",{
+        method: "POST",
+        headers: {
+            'Accept': 'application/json',
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            name: username,
+            text: bodytext,
+            time: Date.now()
+        })
+    })
+}
+
