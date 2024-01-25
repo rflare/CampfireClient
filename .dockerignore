@@ -1,0 +1,16 @@
+node_modules
+dist
+bin
+
+# Text files
+*.md
+!README*
+LICENSE*
+docs
+
+# Source Control
+.git*
+
+# Editor directories and files
+.vscode
+*.sw?
