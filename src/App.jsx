@@ -22,6 +22,8 @@ export default function App() {
             
 
             <header>
+                <h1>BigRus - The Ultimate Social Media</h1><br/>
+
                 <label>Your name:</label><br/>
                 <input type="text" value={username} maxLength="30" onChange={(e) => setUsername(e.target.value)}/><br/>
 
@@ -33,7 +35,7 @@ export default function App() {
             </header>
 
             <br/>
-
+            
             {feed.map((post, index) => 
                 <Post key={index} name={post.name} text={post.text} time={post.time_millis} />
             )}
@@ -53,7 +55,7 @@ function Post({name, text, time}) {
         <>
             <div className="postContainer">
                 <span>{new Date(time).toDateString()}</span>
-                <h1>{name}</h1>
+                <h3>{name}</h3>
                 <p>{text}</p>
             </div>
             <br/>

@@ -1,9 +1,19 @@
+:root{
+    --color1: #252c3d;
+    --color2: #161c26;
+}
+
 *{
+    color: white;
     margin: 0;
 }
 
+body{
+    background-color: var(--color2);
+}
+
 header{
-    background-color: #eeeee0;
+    background-color: var(--color1);
 
     width: 100%;
 
@@ -17,7 +27,16 @@ label{
 
 input, textarea{
     font-size: 15px;
+    background-color: var(--color1);
+    border: medium solid white;
+
     margin-bottom: 25px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+input:focus, textarea:focus{
+    outline: none;
 }
 
 textarea{
@@ -26,14 +45,18 @@ textarea{
 }
 
 button{
+    background-color: var(--color1);
+    border: medium solid white;
+    border-radius: 20px;
     font-size: 17px;
 
     width: 200px;
     height: 40px;
 }
 
+
 .postContainer{
-    background-color: #aaceff;
+    background-color: var(--color1);
 
     width: 60%;
 
@@ -46,5 +69,5 @@ button{
 footer{
     width: 100%;
     height: 200px;
-    background-color: #eeeee0;
+    background-color: var(--color1);
 }
