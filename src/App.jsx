@@ -22,7 +22,7 @@ export default function App() {
             
 
             <header>
-                <h1>BigRus - The Ultimate Social Media</h1><br/>
+                <h1>BigRus - The App for Sigma Males</h1><br/>
 
                 <label>Your name:</label><br/>
                 <input type="text" value={username} maxLength="30" onChange={(e) => setUsername(e.target.value)}/><br/>
