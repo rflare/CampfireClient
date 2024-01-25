@@ -19,8 +19,6 @@ export default function App() {
 
     return (
         <>
-            
-
             <header>
                 <h1>BigRus - The Ultimate Social Media</h1><br/>
 
@@ -44,6 +42,7 @@ export default function App() {
 
             <footer></footer>
 
+            )}
 
 
         </>
@@ -63,8 +62,8 @@ function Post({name, text, time}) {
     )
 }
 
-function uploadPost(username, bodytext)
-{
+
+function uploadPost(username, bodytext) {
     fetch("/api/post",{
         method: "POST",
         headers: {
@@ -79,3 +78,4 @@ function uploadPost(username, bodytext)
     })
 }
 
+export default App
