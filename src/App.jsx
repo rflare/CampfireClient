@@ -96,5 +96,3 @@ function uploadPost(username, bodytext) {
         })
     })
 }
-
-export default App
