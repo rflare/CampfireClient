@@ -6,21 +6,37 @@ export default function App() {
     const [bodyText, setBodyText] = useState("")
 
     const [feed, setFeed] = useState([])
+    const [err, setErr] = useState(false)
 
     useEffect(() => {
         fetch("/api/get")
-            .then((res) => res.json())
-            .then((res) => {
-                console.log(res)
-                setFeed(res)
-            })
+        .then((res) => {
+            if (!res.ok) {
+                setErr(true)
+            }
+            return res.json()
+        })
+        .then((data) => {
+            console.log(data)
+            setFeed(data)
+        })
     }, [])
     
 
+    if(err)
+    {
+        return (
+	    <div className="errorSection">
+		<h1>500 - Internal server error</h1>
+		<h2>Uh oh, looks like one of the servers is down. We won't fix it lol💀</h2>
+	    </div>
+        )
+    }
     return (
         <>
+
             <header>
-                <h1>BigRus - The Ultimate Social Media</h1><br/>
+                <h1>BigRus - The App for Sigma Males</h1><br/>
 
                 <label>Your name:</label><br/>
                 <input type="text" value={username} maxLength="30" onChange={(e) => setUsername(e.target.value)}/><br/>
@@ -40,9 +56,12 @@ export default function App() {
 
             <br/>
 
-            <footer></footer>
+            <footer>
+		        <span>Source code: <a href="https://github.com/rusluck/BigRus.git">https://github.com/rusluck/BigRus.git</a></span><br/>
+		        <span>License: Go look for it↑↑↑</span><br/>
+		        <span>Privacy Policy: Check yourself</span><br/>
+	        </footer>
 
-            )}
 
 
         </>

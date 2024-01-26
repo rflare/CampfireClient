@@ -1,0 +1,1 @@
+http-server dist -p 42067 --proxy http://127.0.0.1:53342
