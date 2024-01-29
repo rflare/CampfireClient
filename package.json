@@ -10,6 +10,7 @@
         "serve": "http-server dist -p 42067 --proxy http://127.0.0.1:53342"
     },
     "dependencies": {
+        "http-server": "^14.1.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },
