@@ -8,6 +8,6 @@ RUN npm i \
 && npm run build \
 && npm i -g http-server
 
-EXPOSE 42067
+EXPOSE ${CLIENT_LOCAL_PORT}
 
-CMD http-server dist -p 42067 --proxy http://server:53342
+CMD http-server dist -p ${CLIENT_LOCAL_PORT} --proxy http://server:${SERVER_LOCAL_PORT}
