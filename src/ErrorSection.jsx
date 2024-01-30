@@ -1,3 +1,5 @@
+import './css/error.css'
+
 export function ErrorSection() {
     return (
         <div className="errorSection">

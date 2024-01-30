@@ -1,3 +1,5 @@
+import './css/bottom.css'
+
 export function BottomSection() {
     return (
         <footer>

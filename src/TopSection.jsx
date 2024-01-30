@@ -1,3 +1,7 @@
+import './css/top.css'
+
+import { uploadPost } from './Network.jsx'
+
 export function TopSection({ username, setUsername, bodyText, setBodyText}) {
     return (
         <header>

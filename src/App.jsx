@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import './css/index.css'
 
 import { downloadPosts } from './Network.jsx'
 import { ErrorSection } from './ErrorSection.jsx'

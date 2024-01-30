@@ -1,0 +1,25 @@
+.postContainer{
+    background-color: var(--color1);
+
+    width: 60%;
+
+    margin: 0 auto;
+    padding: 40px;
+
+    border-radius: 20px;
+
+     .timeSpan{
+        color: #b1b1b1
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 16.5px;
+    }
+
+}
+
+
