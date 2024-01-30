@@ -1,1 +1,2 @@
-Port is 42067
+# BigRus Client
+This is the client for the BigRus project. For the full project, see here https://github.com/rusluck/BigRus
