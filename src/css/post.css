@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /* CSS styling for post container */ 
+=======
+>>>>>>> 8043af141fd56dffed23557404621b576a3f7087
 .postContainer{
     background-color: var(--color1);
 
@@ -9,20 +12,30 @@
 
     border-radius: 20px;
 
+<<<<<<< HEAD
     .timeSpan{
         font-family: var(--font2);
         font-weight: 200;
+=======
+     .timeSpan{
+>>>>>>> 8043af141fd56dffed23557404621b576a3f7087
         color: #b1b1b1
     }
 
     h3{
         font-size: 30px;
+<<<<<<< HEAD
         font-family: var(--font1);
+=======
+>>>>>>> 8043af141fd56dffed23557404621b576a3f7087
     }
 
     p{
         font-size: 16.5px;
+<<<<<<< HEAD
         font-family: var(--font2);
+=======
+>>>>>>> 8043af141fd56dffed23557404621b576a3f7087
     }
 
 }

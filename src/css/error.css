@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /* CSS styling for error content when client cannot fetch server */
+=======
+>>>>>>> 8043af141fd56dffed23557404621b576a3f7087
 .errorSection {
     display: flex;
     justify-content: center;

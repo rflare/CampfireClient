@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * Basically global css styling
 */
@@ -7,6 +8,11 @@
 
     --font1: 'Merriweather', serif;
     --font2: 'Kumbh Sans', sans-serif;
+=======
+:root{
+    --color1: #252c3d;
+    --color2: #161c26;
+>>>>>>> 8043af141fd56dffed23557404621b576a3f7087
 }
 
 *{

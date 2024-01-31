@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 /* CSS styling for bottom component */
+=======
+>>>>>>> 8043af141fd56dffed23557404621b576a3f7087
 footer{
     margin-top: 250px;
     padding: 30px;
     height: 200px;
     background-color: var(--color1);
+<<<<<<< HEAD
     font-family: var(--font2);
+=======
+>>>>>>> 8043af141fd56dffed23557404621b576a3f7087
 }
