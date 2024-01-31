@@ -1,0 +1,17 @@
+/* CSS styling for error content when client cannot fetch server */
+.errorSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+
+    h1{
+	    font-size: 5em;	
+    }
+
+    h2{
+	    font-size: 2.2em;
+    }
+}

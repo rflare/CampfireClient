@@ -1,0 +1,8 @@
+node_modules
+dist
+bin
+.env
+
+# Editor directories and files
+.vscode
+*.sw?

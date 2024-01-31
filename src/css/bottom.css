@@ -1,0 +1,8 @@
+/* CSS styling for bottom component */
+footer{
+    margin-top: 250px;
+    padding: 30px;
+    height: 200px;
+    background-color: var(--color1);
+    font-family: var(--font2);
+}
