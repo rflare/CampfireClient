@@ -5,7 +5,7 @@ import { uploadPost } from './Network.jsx'
 export function TopSection({ username, setUsername, bodyText, setBodyText}) {
     return (
         <header>
-            <h1>BigRus - The  ̶T̶w̶i̶t̶t̶e̶r̶ X for Sigma Males</h1><br/>
+            <h1>Campfire - A place</h1><br/>
 
             <label>Your name:</label><br/>
             <input type="text" value={username} maxLength="30" onChange={(e) => setUsername(e.target.value)}/><br/>
