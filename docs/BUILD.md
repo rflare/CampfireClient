@@ -2,8 +2,8 @@
 
 ## Quick Start
 
-1. `git clone https://github.com/rusluck/BigRusClient.git`
-    - Alternatively, you can use the submodule from [parent project](https://github.com/rusluck/BigRus.git)
+1. `git clone https://github.com/rflare/CampfireClient.git`
+    - Alternatively, you can use the submodule from [parent project](https://github.com/rflare/CampfireApp.git)
 2. `npm i`
 3. Create a `.env` file and add the following variables
    - `CLIENT_LOCAL_PORT`
@@ -13,4 +13,4 @@
    - For build, run `npm run build`
      - For me, `http-server dist -p <client port> --proxy <server address>:<server port>`
 
-Note: It will not work unless you setup the [server](https://github.com/rusluck/BigRusServer.git)
+Note: It will not work unless you setup the [server](https://github.com/rflare/CampfireServer.git)
