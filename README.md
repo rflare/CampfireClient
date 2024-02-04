@@ -1,4 +1,3 @@
-# BigRus Client
+# Campfire Client
 
-This is the client for the BigRus project.
-For the full project, see here https://github.com/rusluck/BigRus
+This is the client for the [Campfire project](https://github.com/rflare/CampfireApp.git).
