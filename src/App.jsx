@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, createContext } from 'react'
 
 import { downloadPosts } from './Network.jsx'
-import { ErrorSection } from './ErrorSection.jsx'
-import { TopSection } from './TopSection.jsx'
-import { MiddleSection } from './MiddleSection.jsx'
+import { BodySection } from './BodySection.jsx'
 import { BottomSection } from './BottomSection.jsx'
+import { StateContext } from './StateContent.jsx'
 
 export default function App() {
     const [username, setUsername] = useState("")
@@ -13,47 +12,33 @@ export default function App() {
     const [feed, setFeed] = useState([])
     const [err, setErr] = useState(false)
 
+
     //Fetches posts per reload
     useEffect(() => {
         downloadPosts(setErr, setFeed)
-    }, [])
+    })
     
-
-    if(err)
-    {
-        //Error page if could not fetch posts
-        return <ErrorSection />
-    }
     return (
-        <>
-            {
-                 //Main top section
-                //includes main title and stuff for uploading   
-            }
-            <TopSection
-                username={username} setUsername={setUsername}
-                bodyText={bodyText} setBodyText={setBodyText}
-            />
+        <StateContext.Provider value = {{
+            username: username,
+            setUsername: setUsername,
+            
+            bodyText: bodyText,
+            setBodyText: setBodyText,
 
-            <br/>
+            feed: feed,
+            setFeed: setFeed,
 
-            {
+            err: err,
+            setErr: setErr
+        }}>
 
-                //Middle section
-                //Contains feed with posts
-            }
-            <MiddleSection content={feed} />
+            <BodySection />
 
-            <br/>
-
-            {
-                //Bottom Section
-                //Contains useless information that is critical knowledge to the average viewer
-            }
             <BottomSection />
 
 
 
-        </>
+        </StateContext.Provider>
     )
 }

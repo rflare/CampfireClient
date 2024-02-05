@@ -1,8 +1,13 @@
+import { useContext } from 'react'
 import { Post } from './Post.jsx'
+import { StateContext } from './StateContent.jsx'
 
-export function MiddleSection({ content }) {
+export function MiddleSection() {
+
+    const state = useContext(StateContext)
+
     return <>
-        {content.map((post, index) => 
+        {state.feed.map((post, index) => 
             <Post key={index} name={post.name} text={post.text} time={post.time_millis} />
         )}
     </>
