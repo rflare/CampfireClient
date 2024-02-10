@@ -9,8 +9,9 @@
    - `CLIENT_LOCAL_PORT`
    - `SERVER_LOCAL_PORT`
 4. Run the project
-   - For dev: `npm run dev`
-   - For build, run `npm run build`
-     - For me, `http-server dist -p <client port> --proxy <server address>:<server port>`
+   - For dev: `scripts/dev.sh`
+   - For build, run:
+     - `npm run build`
+     - `npm start`
 
 Note: It will not work unless you setup the [server](https://github.com/rflare/CampfireServer.git)

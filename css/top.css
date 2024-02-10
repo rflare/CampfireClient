@@ -1,0 +1,25 @@
+/* Css styling for top section
+ * Includes:
+ * - Main title
+ * - Uploading a new post
+ */
+
+header{
+
+    background-color: var(--color1);
+
+
+    padding: 30px 30px;
+
+    h1{
+        font-size: 40px;
+        font-family: var(--font1);
+    }
+
+    a{
+        font-size: 19px;
+        font-family: var(--font2);
+    }
+
+
+}

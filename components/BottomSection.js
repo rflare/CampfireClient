@@ -1,6 +1,6 @@
-import './css/bottom.css'
+import '@/css/bottom.css'
 
-export function BottomSection() {
+export default function BottomSection() {
     return (
         <footer>
             <span>Source code: <a href="https://github.com/rusluck/BigRus.git">https://github.com/rusluck/BigRus.git</a></span><br/>

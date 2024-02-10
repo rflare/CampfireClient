@@ -1,4 +1,4 @@
-import './css/post.css'
+import '@/css/post.css'
 
 export function Post({name, text, time}) {
     return (

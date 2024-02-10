@@ -1,21 +1,18 @@
-/* Css styling for top section
- * Includes:
- * - Main title
- * - Uploading a new post
- */
+.flexCenterer{
+    margin-top: 70px;
 
-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.uploadContainer{
 
-    background-color: var(--color1);
-
-
-    padding: 30px 30px;
-
+    width: 70vw;
     h1{
         font-size: 40px;
         font-family: var(--font1);
     }
-
     label{
         font-size: 20px;
         font-family: var(--font2);

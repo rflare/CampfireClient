@@ -1,9 +1,9 @@
 import { useContext } from 'react'
 
-import { ErrorSection } from './ErrorSection.jsx'
-import { TopSection } from './TopSection.jsx'
-import { MiddleSection } from './MiddleSection.jsx'
-import { StateContext } from './StateContent.jsx'
+import { ErrorSection } from '@/components/ErrorSection.js'
+import { TopSection } from './TopSection.js'
+import { MiddleSection } from './MiddleSection.js'
+import { StateContext } from './StateContext.js'
 
 
 export function BodySection() {

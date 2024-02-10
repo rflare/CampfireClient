@@ -1,4 +1,4 @@
-import './css/error.css'
+import '@/css/error.css'
 
 export function ErrorSection() {
     return (

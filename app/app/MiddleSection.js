@@ -1,6 +1,6 @@
 import { useContext } from 'react'
-import { Post } from './Post.jsx'
-import { StateContext } from './StateContent.jsx'
+import { Post } from '@/components/Post.js'
+import { StateContext } from '@/app/app/StateContext.js'
 
 export function MiddleSection() {
 
