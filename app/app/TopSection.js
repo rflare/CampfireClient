@@ -1,7 +1,6 @@
 import { useContext } from 'react'
 import '@/css/top.css'
 
-import { uploadPost } from '@/components/Network.js'
 import { StateContext } from './StateContext.js'
 
 export function TopSection() {
@@ -12,7 +11,7 @@ export function TopSection() {
         <header>
             <h1>Campfire - A place</h1><br/>
             
-            <a href="/upload/">Upload a post</a>
+            <a href="/app/upload/">Upload a post</a>
 
 
         </header>

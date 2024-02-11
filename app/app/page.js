@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
-import { downloadPosts } from '@/components/Network.js'
+import { downloadPosts } from '@/components/NetworkUtils.js'
 import { BodySection } from './BodySection.js'
 import { BottomSection } from '@/components/BottomSection.js'
 import { StateContext } from './StateContext.js'
