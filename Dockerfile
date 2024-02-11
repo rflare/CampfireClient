@@ -6,9 +6,8 @@ COPY . .
 
 RUN npm i \
 && npm run build \
-&& npm i -g http-server \
-&& chmod +x scripts/serve.sh
+&& npm i -g http-server
 
 EXPOSE ${CLIENT_LOCAL_PORT}
 
-CMD scripts/serve.sh
+CMD http-server out -p ${CLIENT_LOCAL_PORT} --proxy http://server:${SERVER_LOCAL_PORT}
