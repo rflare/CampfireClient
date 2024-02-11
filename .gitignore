@@ -2,6 +2,7 @@ node_modules
 bin
 .env
 .next
+out
 
 # Editor directories and files
 .vscode

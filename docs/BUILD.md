@@ -10,8 +10,11 @@
    - `SERVER_LOCAL_PORT`
 4. Run the project
    - For dev: `scripts/dev.sh`
+     - Run this for permissions `chmod +x scripts/dev.sh`
    - For build, run:
      - `npm run build`
-     - `npm start`
+     - `scripts/serve.sh`
+       - This assumes you have `http-server` installed. If not, run `npm i -g http-server`
+       - Don't forget 
 
 Note: It will not work unless you setup the [server](https://github.com/rflare/CampfireServer.git)

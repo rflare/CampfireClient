@@ -2,6 +2,7 @@ node_modules
 bin
 .next
 .env
+out
 
 # Text files
 *.md
