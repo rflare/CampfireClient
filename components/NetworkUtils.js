@@ -23,7 +23,7 @@ export function uploadPost(username, bodytext) {
         body: JSON.stringify({
             name: username,
             text: bodytext,
-            time: Date.now()
+            timeMillis: Date.now()
         })
     })
 }

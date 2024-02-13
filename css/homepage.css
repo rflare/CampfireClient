@@ -1,0 +1,22 @@
+body{
+    background-color: white;
+}
+
+.homePage{
+    padding: 50px;
+    *{
+        color: black;
+    }
+    h1{
+        font-family: var(--font2);
+        text-align: center;
+        font-size: 80px;
+    }
+    h2{
+        font-family: var(--font2);
+        font-size: 40px;
+    }
+    a{
+        font-family: var(--font2)
+    }
+}
