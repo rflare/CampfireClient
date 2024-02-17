@@ -7,8 +7,8 @@ export default function MiddleSection() {
     const state = useContext(StateContext)
 
     return <>
-        {state.feed.map((post, index) => 
-            <UserPost key={index} name={post.name} text={post.text} timeMillis={post.timeMillis} />
+        {state.userPosts.map((userpost, index) => 
+            <UserPost key={index} name={userpost.name} text={userpost.text} timeMillis={userpost.timeMillis} />
         )}
     </>
 }

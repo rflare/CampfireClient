@@ -9,23 +9,23 @@ import StateContext from './StateContext.js'
 
 export default function Page() {
 
-    const [feed, setFeed] = useState([])
-    const [err, setErr] = useState(false)
+    const [userPosts, setUserPosts] = useState([])
+    const [isErr, setIsErr] = useState(false)
 
 
     //Fetches posts per reload
     useEffect(() => {
-        downloadUserPosts(setErr, setFeed)
+        downloadUserPosts(setIsErr, setUserPosts)
     }, [])
     
     return (
         <StateContext.Provider value = {{
 
-            feed: feed,
-            setFeed: setFeed,
+            userPosts: userPosts,
+            setUserPosts: setUserPosts,
 
-            err: err,
-            setErr: setErr
+            isErr: isErr,
+            setIsErr: setIsErr
         }}>
 
             <BodySection />

@@ -1,19 +1,19 @@
-export function downloadUserPosts(setErr, setResult) {
+export function downloadUserPosts(setIsErr, setUserPosts) {
     fetch("/api/userpost/get")
     .then((res) => {
         if (!res.ok) {
-            setErr(true)
+            setIsErr(true)
         }
         return res.json()
     })
     .then((data) => {
         console.log(data)
-        setResult(data)
+        setUserPosts(data)
     })
 }
 
 
-export function uploadUserPost(username, bodytext) {
+export function uploadUserPost(name, text) {
     fetch("/api/userpost/post",{
         method: "POST",
         headers: {
