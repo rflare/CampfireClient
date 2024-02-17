@@ -1,5 +1,5 @@
-export function downloadPosts(setErr, setResult) {
-    fetch("/api/content/get")
+export function downloadUserPosts(setErr, setResult) {
+    fetch("/api/userpost/get")
     .then((res) => {
         if (!res.ok) {
             setErr(true)
@@ -13,8 +13,8 @@ export function downloadPosts(setErr, setResult) {
 }
 
 
-export function uploadPost(username, bodytext) {
-    fetch("/api/content/post",{
+export function uploadUserPost(username, bodytext) {
+    fetch("/api/userpost/post",{
         method: "POST",
         headers: {
             'Accept': 'application/json',

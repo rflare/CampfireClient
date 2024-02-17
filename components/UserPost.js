@@ -1,6 +1,6 @@
 import '@/css/post.css'
 
-export function Post({name, text, time}) {
+export default function UserPost({name, text, time}) {
     return (
         <>
             <div className="postContainer">

@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from 'react'
 
-import { downloadPosts } from '@/components/NetworkUtils.js'
-import { BodySection } from './BodySection.js'
-import { BottomSection } from '@/components/BottomSection.js'
-import { StateContext } from './StateContext.js'
+import { downloadUserPosts } from '@/components/NetworkUtils.js'
+import BodySection from './BodySection.js'
+import BottomSection from '@/components/BottomSection.js'
+import StateContext from './StateContext.js'
 
 export default function Page() {
 
@@ -15,7 +15,7 @@ export default function Page() {
 
     //Fetches posts per reload
     useEffect(() => {
-        downloadPosts(setErr, setFeed)
+        downloadUserPosts(setErr, setFeed)
     }, [])
     
     return (

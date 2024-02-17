@@ -9,5 +9,5 @@ the subcomponents used in this software
 
 The following subcomponents are provided under the SIL OPEN FONT LICENSE
 
-Kumbh Sans (https://github.com/xconsau/KumbhSans) [link](./docs/licenses/LICENSE-kumbhsans.txt)
-Merriweather (https://github.com/EbenSorkin/Merriweather) [link](./docs/licenses/LICENSE-merriweather.txt)
+Kumbh Sans (https://github.com/xconsau/KumbhSans) [link](./licenses/LICENSE-kumbhsans.txt)
+Merriweather (https://github.com/EbenSorkin/Merriweather) [link](./licenses/LICENSE-merriweather.txt)

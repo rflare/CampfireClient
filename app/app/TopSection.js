@@ -1,9 +1,9 @@
 import { useContext } from 'react'
 import '@/css/top.css'
 
-import { StateContext } from './StateContext.js'
+import StateContext from './StateContext.js'
 
-export function TopSection() {
+export default function TopSection() {
 
     const state = useContext(StateContext)
 

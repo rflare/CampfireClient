@@ -1,12 +1,12 @@
 import { useContext } from 'react'
 
-import { ErrorSection } from '@/components/ErrorSection.js'
-import { TopSection } from './TopSection.js'
-import { MiddleSection } from './MiddleSection.js'
-import { StateContext } from './StateContext.js'
+import ErrorSection from '@/components/ErrorSection.js'
+import TopSection from './TopSection.js'
+import MiddleSection from './MiddleSection.js'
+import StateContext from './StateContext.js'
 
 
-export function BodySection() {
+export default function BodySection() {
 
     const state = useContext(StateContext)
 

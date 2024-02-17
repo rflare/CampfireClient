@@ -2,8 +2,8 @@
 
 import { useState } from 'react'
 
-import { uploadPost } from '@/components/NetworkUtils.js'
-import { BottomSection } from '@/components/BottomSection.js'
+import { uploadUserPost } from '@/components/NetworkUtils.js'
+import BottomSection from '@/components/BottomSection.js'
 
 import '@/css/upload.css'
 
@@ -35,7 +35,7 @@ export default function Page() {
                 />
                 <br/>
         
-                <button onClick={()=>uploadPost(username, text)}>Upload post</button>
+                <button onClick={()=>uploadUserPost(username, text)}>Upload post</button>
 
             </div>
         </div>

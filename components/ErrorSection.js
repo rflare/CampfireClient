@@ -1,6 +1,6 @@
 import '@/css/error.css'
 
-export function ErrorSection() {
+export default function ErrorSection() {
     return (
         <div className="errorSection">
             <h1>500 - Internal server error</h1>
