@@ -21,8 +21,8 @@ export function uploadUserPost(name, text) {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            name: username,
-            text: bodytext,
+            name: name,
+            text: text,
             timeMillis: Date.now().toString()
         })
     })
