@@ -7,7 +7,6 @@ export function downloadUserPosts(setIsErr, setUserPosts) {
         return res.json()
     })
     .then((data) => {
-        console.log(data)
         setUserPosts(data)
     })
 }
