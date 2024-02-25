@@ -1,7 +1,7 @@
 node_modules
 bin
 .next
-.env
+.env.local
 out
 
 # Text files
