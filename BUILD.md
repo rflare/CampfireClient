@@ -5,9 +5,7 @@
 1. `git clone https://github.com/rflare/campfire-client.git`
     - Alternatively, you can use the submodule from [parent project](https://github.com/rflare/campfire.git)
 2. `npm i`
-3. Create a `.env` file and add the following variables
-   - `CLIENT_LOCAL_PORT`
-   - `SERVER_LOCAL_PORT`
+3. Follow [these instructions](./docs/ENVIRONMENT.md) 
 4. Run the project
    - For dev: `scripts/dev.sh`
    - For build, run:

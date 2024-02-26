@@ -1,6 +1,6 @@
 # Environment variables
 
-Copy this into `.env` and fill out the values
+Create a file named `./.env.local`. Copy and fill out the values
 
 For hosting locally:
 ```env
