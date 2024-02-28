@@ -1,5 +1,5 @@
 {
-    "name": "CampfireClient",
+    "name": "campfire-client",
     "private": true,
     "scripts": {
         "dev": "next dev",
