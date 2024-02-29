@@ -1,5 +1,5 @@
-import "@/css/index.css"
-import "@/css/fonts.css"
+import "@/styles/index.css"
+import "@/styles/fonts.css"
 
 import BottomSection from "@/components/BottomSection";
 
@@ -10,6 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
+            <head>
+                <link rel="icon" href="/favicon.svg" sizes="any" />
+            </head>
             <body>
                 {children}
                 <BottomSection />

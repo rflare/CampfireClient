@@ -1,4 +1,4 @@
-import '@/css/error.css'
+import '@/styles/error.css'
 
 export default function ErrorSection() {
     return (

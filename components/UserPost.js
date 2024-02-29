@@ -1,4 +1,4 @@
-import '@/css/post.css'
+import '@/styles/userpost.css'
 
 export default function UserPost({name, text, timeMillis}) {
     return (

@@ -1,4 +1,4 @@
-import '@/css/bottom.css'
+import '@/styles/bottom.css'
 
 export default function BottomSection() {
     return (

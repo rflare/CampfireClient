@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import '@/css/top.css'
+import '@/styles/top.css'
 
 import StateContext from './StateContext.js'
 
